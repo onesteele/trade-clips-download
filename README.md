@@ -2,7 +2,7 @@
 
 The page behind https://onesteele.github.io/trade-clips-download/. It's one file, `index.html`, served by GitHub Pages from the `main` branch.
 
-The installer isn't kept in the repository itself. The `.dmg` (322 MB) and the files that travel with it are attached to the release [v0.8.2-unsigned](https://github.com/onesteele/trade-clips-download/releases/tag/v0.8.2-unsigned). The page's Download button links straight to that file. Older releases stay on the [releases page](https://github.com/onesteele/trade-clips-download/releases).
+The installer isn't kept in the repository itself. The `.dmg` (322 MB) and the files that travel with it are attached to the release [v0.9.0-unsigned](https://github.com/onesteele/trade-clips-download/releases/tag/v0.9.0-unsigned). The page's Download button links straight to that file. Older releases stay on the [releases page](https://github.com/onesteele/trade-clips-download/releases).
 
 The app's source code stays private: Reece's repository `RPx305/trade-clips` and the fork `onesteele/trade-clips`. This repository holds only the download page.
 
@@ -17,7 +17,7 @@ Each release's files go in their own folder, `release-files/<tag>/`. That folder
      gh release download <tag> -R RPx305/trade-clips --clobber
      shasum -a 256 -c SHA256SUMS.txt
      ```
-   - **A version built on this Mac** (0.3.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.1 and 0.8.2 were built from `~/Documents/trade-clips`): bump `version` in its `package.json`, then run `npm run package` and `npm run handoff`. Copy the files out of `release/handoff/Trade Clips <version>/` with hyphens instead of spaces, because GitHub renames spaces:
+   - **A version built on this Mac** (0.3.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.1, 0.8.2 and 0.9.0 were built from `~/Documents/trade-clips`): bump `version` in its `package.json`, then run `npm run package` and `npm run handoff`. Copy the files out of `release/handoff/Trade Clips <version>/` with hyphens instead of spaces, because GitHub renames spaces:
      - `Trade-Clips-<version>-arm64.dmg`
      - `How-to-install-Trade-Clips.pdf`
      - from `FFmpeg source code/`: the four tarballs, `ffmpeg-build.txt` and `COPYING.GPLv2`, plus `README.txt` renamed to `FFmpeg-source-README.txt`
